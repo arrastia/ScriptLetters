@@ -12,6 +12,15 @@ const path = keyframes`{
     }
 }`;
 
+const spin = keyframes`{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}`;
+
 const Item = styled('span')`
   border-radius: 50%;
   border: calc(var(--size) / 16) var(--react) solid;
@@ -71,6 +80,7 @@ const Logo = styled('div')`
   --speed: 2;
   --angle: 66deg;
 
+  animation: ${spin} infinite 15s linear;
   display: block;
   height: var(--size);
   position: relative;
