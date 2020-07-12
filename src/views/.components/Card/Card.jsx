@@ -5,17 +5,15 @@ import { FiExternalLink } from 'react-icons/fi';
 
 import { Styles } from './Card.styles';
 
-export const Card = ({ className, disabled, label, logo, onClick, redirect, style }) => {
-  return (
-    <Styles.Card className={className} disabled={disabled} onClick={() => onClick()} style={style}>
-      <Styles.Icon>
-        <FiExternalLink onClick={() => window.open(redirect)} />
-      </Styles.Icon>
-      {logo}
-      <Styles.Label>{label}</Styles.Label>
-    </Styles.Card>
-  );
-};
+export const Card = ({ className, disabled, label, logo, onClick, redirect, style }) => (
+  <Styles.Card className={className} disabled={disabled} onClick={() => onClick()} style={style}>
+    <Styles.Icon>
+      <FiExternalLink onClick={() => window.open(redirect)} />
+    </Styles.Icon>
+    {logo}
+    <Styles.Label>{label}</Styles.Label>
+  </Styles.Card>
+);
 
 Card.propTypes = {
   className: PropTypes.string,
