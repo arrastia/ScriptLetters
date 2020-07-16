@@ -7,10 +7,17 @@ import { Layout } from 'views/.components/Layout';
 
 import { Home } from 'views/Home';
 
+import { LanguageProvider } from 'views/.tools/Providers/LanguageProvider';
+import { MessagesProvider } from 'views/.tools/Providers/MessagesProvider';
+
 export const App = () => (
-  <Router>
-    <Switch>
-      <RouteWrapper exact path="/" component={Home} layout={Layout} />
-    </Switch>
-  </Router>
+  <LanguageProvider>
+    <MessagesProvider>
+      <Router>
+        <Switch>
+          <RouteWrapper exact path="/" component={Home} layout={Layout} />
+        </Switch>
+      </Router>
+    </MessagesProvider>
+  </LanguageProvider>
 );

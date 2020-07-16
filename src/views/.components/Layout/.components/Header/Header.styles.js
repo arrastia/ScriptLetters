@@ -4,8 +4,9 @@ import { spin } from 'views/.tools/Styles/KeyFrames';
 
 const Header = styled('header')`
   align-items: center;
+  border-bottom: 0.1rem solid black;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem;
   position: relative;
   width: calc(100% - 2rem);

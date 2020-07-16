@@ -7,7 +7,7 @@ import { DropdownPanel } from './.components/DropdownPanel';
 
 import { useOnClickOutside } from 'views/.tools/Hooks/useOnClickOutside';
 
-export const Dropdown = ({ icon, items, label, panelStyle, onClick, onItemClick, style }) => {
+export const Dropdown = ({ icon, items, label, onClick, onItemClick, panelStyle, style }) => {
   const [isToggled, setToggle] = useState(false);
 
   const ref = useRef(null);
