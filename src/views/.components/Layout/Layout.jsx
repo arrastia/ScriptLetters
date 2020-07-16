@@ -2,4 +2,11 @@ import React from 'react';
 
 import { Styles } from './Layout.styles';
 
-export const Layout = ({ children }) => <Styles.Layout>{children}</Styles.Layout>;
+import { Header } from './.components/Header';
+
+export const Layout = ({ children }) => (
+  <Styles.Layout>
+    <Header />
+    {children}
+  </Styles.Layout>
+);

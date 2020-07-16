@@ -8,9 +8,9 @@ const Layout = styled('div')`
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   justify-content: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-align: center;
-  width: 100vw;
+  /* width: 100vw; */
 `;
 
 export const Styles = { Layout };
