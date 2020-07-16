@@ -1,25 +1,8 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+
+import { path, spin } from 'views/.tools/Styles/KeyFrames';
 
 const size = `100px`;
-
-const path = keyframes`{
-   from {
-      transform: rotateZ(0) translateX(53px) rotateZ(0) rotateY(66deg);
-    }
-    to {
-      transform: rotateZ(360deg) translateX(53px) rotateZ(-360deg)
-        rotateY(66deg);
-    }
-}`;
-
-const spin = keyframes`{
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}`;
 
 const Item = styled('span')`
   border-radius: 50%;
