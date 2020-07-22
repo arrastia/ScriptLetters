@@ -6,7 +6,7 @@ const Header = styled('header')`
   align-items: center;
   border-bottom: 0.1rem solid black;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1rem;
   position: relative;
   width: calc(100% - 2rem);
@@ -14,6 +14,7 @@ const Header = styled('header')`
 
 const Logo = styled('img')`
   pointer-events: none;
+  width: 100px;
 
   @media (prefers-reduced-motion: no-preference) {
     animation: ${spin} infinite 20s linear;

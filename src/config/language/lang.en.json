@@ -1,6 +1,7 @@
 {
   "en": {
     "language": "Language",
-    "reactHooks": "React hooks"
+    "reactHooks": "React hooks",
+    "cssAnimations": "CSS animations"
   }
 }

@@ -13,6 +13,13 @@
   --text: #282c34;
   --white: #ffffff;
   --wildcard: #06a9b1;
+
+  /* --rotate-1: #29ffff;
+  --rotate-2: #ff65ff;
+  --rotate-3: #ffc; */
+  --rotate-1: #29ffff;
+  --rotate-2: #fcc7fc;
+  --rotate-3: #ffc;
 }
 
 .dark-mode {
