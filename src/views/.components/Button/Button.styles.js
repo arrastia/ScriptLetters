@@ -6,6 +6,12 @@ const Icon = styled('span')`
   align-items: center;
   display: flex;
   font-size: x-large;
+
+  svg,
+  img {
+    max-width: 2rem;
+    max-height: 2rem;
+  }
 `;
 
 const Button = styled('button')`

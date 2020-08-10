@@ -16,6 +16,9 @@ export const App = () => (
       <Router>
         <Switch>
           <RouteWrapper exact path="/" component={Home} layout={Layout} />
+          <RouteWrapper exact path="/css" component={Home} layout={Layout} />
+          <RouteWrapper exact path="/react" component={Home} layout={Layout} />
+          <RouteWrapper exact path="/tampermonkey" component={Home} layout={Layout} />
         </Switch>
       </Router>
     </MessagesProvider>

@@ -23,6 +23,13 @@ const Content = styled('div')`
   padding: 0.625rem;
   transform: translateX(-50%);
 
+  &:hover {
+    ${OutsideContent} {
+      transform: scale(1.15);
+      transition: transform 0.1s ease;
+    }
+  }
+
   &,
   ${OutsideContent} {
     border-radius: 4rem;
@@ -62,7 +69,7 @@ const SupportUs = styled('div')`
   &,
   ${Content}, ${OutsideContent} {
     height: 4rem;
-    width: 15rem;
+    width: 4rem;
   }
 
   &.isOpened {

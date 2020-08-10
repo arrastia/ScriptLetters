@@ -1,6 +1,11 @@
 import React, { Fragment, useRef, useState } from 'react';
 
+import { GiReceiveMoney } from 'react-icons/gi';
 import { GrBitcoin, GrPaypal } from 'react-icons/gr';
+
+import bitcoin from 'assets/svg/bitcoin.svg';
+import buymeacoffee from 'assets/svg/buymeacoffee.svg';
+import paypal from 'assets/svg/paypal.svg';
 
 import { Styles } from './SupportUs.styles';
 
@@ -19,19 +24,17 @@ export const SupportUs = () => {
 
   const onOpenDonate = () => setIsOpened(true);
 
-  const renderDonateButtons = () => (
-    <Fragment>
-      <Button icon={<GrPaypal />} />
-      <Button icon={<GrBitcoin />} />
-      <Button icon={<GrBitcoin />} />
-    </Fragment>
-  );
+  const renderDonateButtons = () => [paypal, bitcoin, buymeacoffee].map(icon => <Button icon={renderDonateIcon(icon)} />);
+
+  const renderDonateIcon = path => <img src={path} alt="Buy me a coffee" />;
 
   return (
     <Styles.SupportUs className={isOpened ? 'isOpened' : ''} onClick={() => onOpenDonate()}>
       <Styles.Content ref={contentRef}>
         <Styles.InsideContent>{renderDonateButtons()}</Styles.InsideContent>
-        <Styles.OutsideContent>SUPPORT US</Styles.OutsideContent>
+        <Styles.OutsideContent>
+          <GiReceiveMoney />
+        </Styles.OutsideContent>
       </Styles.Content>
     </Styles.SupportUs>
   );
